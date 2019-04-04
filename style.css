@@ -5,10 +5,15 @@ html, body {
   font-family: 'helvetica', 'arial', 'sans';
 }
 
-h1,h2,h3,h4 {
+h1{
   font-family: 'helvetica', 'arial', 'sans';
+  font-size: 30px;
   }
 
+h2,h3,h4 {
+    font-family: 'helvetica', 'arial', 'sans';
+    font-size: 18px;
+    }
 
 a {
   color: #000;
@@ -66,4 +71,3 @@ a {
   color: #FFF;
   text-decoration: none;
 }
-
