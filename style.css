@@ -1,22 +1,26 @@
-
 html, body {
   padding: 0 0 0 0;
   margin: 0;
   font-family: 'helvetica', 'arial', 'sans';
 }
 
-
-h1{
+h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 5em;
+  font-size: 8em;
   font-weight: 300;
-  }
+}
 
-h2,h3,h4 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.25em;
-    font-weight: 400;
-    }
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.25em;
+  font-weight: 300;
+}
+
+h3, h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+}
 
 a {
   color: #000;
@@ -25,6 +29,11 @@ a {
 
 a:hover {
   background-color: black;
+  color: white;
+}
+
+.active {
+  background-color: blue;
   color: white;
 }
 
@@ -46,51 +55,100 @@ li a {
   text-decoration: none;
 }
 
+#container {
+  height: 600px;
+}
+
 .header {
   background: #fff;
   color: #000;
-  height: 500px;
-  padding: 30px 30px 30px;
+  margin-top:50px;
 }
 
 .header h1 {
+  position: relative;
+  left: 0%;
+  width: 100%;
   text-align: center;
+  margin:0px;
 }
 
 .header h2 {
-  text-align: center;
+  position: relative;
+  width: 60%;
+  float: right;
+  right: -6px;
+  text-align: left;
+  border: 3px solid black;
+  padding: 5px 0 5px 20px;
 }
 
 .triangle {
-  width: 0;
-  height: 0;
+  position: absolute;
   border-style: solid;
-  border-width: 500px 1000px 0 0;
+  border-width: 400px 650px 0 0;
   border-color: #007bff transparent transparent transparent;
+  float: left;
+}
+
+.nav {
+  padding-right: 5px;
 }
 
 .nav a {
+  position: relative;
   float: right;
   padding: 20px;
 }
 
+.assignheader {
+  position: relative;
+  width: 100%;
+  text-align: center;
+
+}
+
+.assignheader h3 {
+  margin-top:80px;
+  margin-bottom: 0px;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 13px;
+  vertical-align: middle;
+  left:
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.assignments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  float:left;
+  width:100%;
+  margin: 70px auto;
+}
+
 .assignment {
-  font-size: 12px;
+  font-size: 1em;
   line-height: 24px;
   font-family: 'helvetica', 'arial', 'sans';
   padding: 20px 20px 20px 30px;
-  width: 250px;
-  height: 350px;
   float: left;
 }
 
 .assignment a {
-  padding: 20px 20px 20px 30px;
-}
-
-.assignment a {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
 .assignment a:hover {
@@ -99,23 +157,49 @@ li a {
   text-decoration: none;
 }
 
-
 .footer {
-    width: 1100px;
-    float: left;
-    padding: 300px 0px 30px 30px;
+  width: 1100px;
+  float: left;
+  padding: 300px 0px 30px 30px;
 }
 
 .widebody {
-    width: 800px;
-    padding: 0px 30px 30px 30px;
+  width: 800px;
+  padding: 0px 30px 30px 30px;
 }
 
-.widebody a {
-}
+.widebody a {}
 
 .widebody a:hover {
   background: #F06;
   color: #FFF;
   text-decoration: none;
+}
+
+/* About me */
+
+.aboutheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  float:left;
+  margin: 0 auto;
+  border: 1px solid red;
+  width:100%;
+}
+
+.aboutheader img{
+  width:50%;
+  float:left;
+  border: 1px solid blue;
+  padding: 20px;
+}
+
+.aboutheader ul{
+  display:block;
+  float:left;
+  text-align: left;
+
 }
