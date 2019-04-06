@@ -113,6 +113,18 @@ li a {
   margin-bottom: 0px;
 }
 
+.assignheader a {
+ color: #000;
+ font-family: 'Oswald', sans-serif;
+ text-decoration: none;
+}
+
+.assignheader a:hover {
+ background: #000;
+ color: white;
+ text-decoration: none;
+}
+
 i {
   border: solid black;
   border-width: 0 3px 3px 0;
@@ -179,27 +191,29 @@ i {
 /* About me */
 
 .aboutheader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
   float:left;
   margin: 0 auto;
-  border: 1px solid red;
   width:100%;
 }
 
 .aboutheader img{
   width:50%;
   float:left;
-  border: 1px solid blue;
   padding: 20px;
 }
 
 .aboutheader ul{
-  display:block;
+  list-style-type: circle;
+  position:relative;
+  display: block;
   float:left;
   text-align: left;
+  margin-left: 20px;
+}
 
+
+.aboutheader li {
+  position:relative;
+  display: block;
+  float: left;
 }
