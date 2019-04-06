@@ -29,13 +29,16 @@ p {
     font-weight: 300;
   }
 
-  .about img{
+  .about img {
     position: relative;
-    width:50%;
-    float:left;
-    padding: 20px;
+    max-width: 500px;
+    float: left;
+    padding: 0 20px 0 0;
   }
 
+  .noimage {
+    padding-left: 0px;
+  }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -58,20 +61,18 @@ p {
     font-weight: 300;
   }
 
-  .about img{
+  .about img {
     position: relative;
-    width:100%;
-    float:left;
-    padding: 0px 0px 15px;
+    width: 100%;
+    max-width: 500px;
+    float: left;
+    padding: 0px 0px 10px;
   }
 
-  p {
+  p, ul {
     font-size: .9em;
   }
-
 }
-
-
 
 a {
   color: #36384C;
@@ -88,33 +89,13 @@ a:hover {
   color: white;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-  float: right;
-}
-
-li a {
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
 #container {
   height: auto;
 }
 
-
-
 .header {
   color: #000;
-  margin-top:50px;
+  margin-top: 50px;
 }
 
 .header h1 {
@@ -122,7 +103,7 @@ li a {
   left: 0%;
   width: 100%;
   text-align: center;
-  margin:0px;
+  margin: 0px;
 }
 
 .header h2 {
@@ -137,7 +118,7 @@ li a {
 
 .triangle {
   position: absolute;
-  width:0%;
+  width: 0%;
   border-style: solid;
   border-width: 400px 650px 0 0;
   border-color: #C55F4E transparent transparent transparent;
@@ -154,29 +135,47 @@ li a {
   padding: 20px;
 }
 
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav li {
+  float: right;
+}
+
+.nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 .assignheader {
   position: relative;
   width: 100%;
   text-align: center;
-  padding-top:50px;
+  padding-top: 50px;
 }
 
 .assignheader h3 {
-  margin-top:80px;
+  margin-top: 80px;
   margin-bottom: 10px;
 }
 
 .assignheader a {
- color: #000;
- font-family: 'Oswald', sans-serif;
- text-decoration: none;
- padding:7px 7px;
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  padding: 7px 7px;
 }
 
 .assignheader a:hover {
- background: #EBA966;
- color: white;
- text-decoration: none;
+  background: #EBA966;
+  color: white;
+  text-decoration: none;
 }
 
 i {
@@ -201,8 +200,8 @@ i {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  float:left;
-  width:100%;
+  float: left;
+  width: 100%;
   margin: 70px auto;
 }
 
@@ -244,13 +243,11 @@ i {
 }
 
 /* About me */
-
 .about {
-  float:left;
+  float: left;
   margin: 0 auto;
-  width:100%;
+  width: 100%;
 }
-
 
 .row {
   background-color: white;
@@ -260,14 +257,46 @@ i {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  float:left;
-  width:100%;
+  float: left;
+  width: 100%;
   margin: 70px auto;
 }
 
-.assignment {
-  font-size: 1em;
-  line-height: 24px;
-  padding: 20px 20px 20px 30px;
+.about a {
+  font-family: 'roboto', 'helvetica', 'arial', 'sans';
+  text-decoration: none;
+  color: #C55F4E;
+}
+
+.about a:hover {
+  font-family: 'roboto', 'helvetica', 'arial', 'sans';
+  text-decoration: none;
+  background: #EBA966;
+  color: white;
+}
+
+.noimage {
+  min-width: 300px;
+  max-width: 500px;
+  min-height: 200px;
+}
+
+.about .assignments {
+  position: relative;
   float: left;
+  margin: 10px 0;
+}
+
+.subtitle {
+  position: relative;
+  float: left;
+  text-align: left;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.about .assignment {
+  position: relative;
+  float: left;
+  margin: 10px 0;
 }
