@@ -216,6 +216,13 @@ i {
   float: left;
 }
 
+.assignment h3 {
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 250px;
+  line-height: 1em;
+}
+
 .assignment a {
   color: #000;
   text-decoration: none;
@@ -316,4 +323,55 @@ i {
   text-align: left;
   width: 100%;
   padding-left: 20px;
+}
+
+/* Assignments Page */
+.assignmentspage {
+  background-color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  float: left;
+  width: 100%;
+  margin: 150px auto;
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: auto;
+  padding: 0 10%;
+  background: #EBA966;
+}
+
+.container h3 {
+  font-size: 1.5em;
+}
+
+.container a {
+  color: #36384C;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container a:hover {
+  background: #36384C;
+  color: white;
+}
+
+.container .assignment {
+  border: 3px solid #36384C;
+  width: 70%;
+  margin: 0 auto 20px;
+}
+
+.container .assignment img {
+  width: 70%;
+}
+
+.container .assignment .inspo img {
+  width: 120%
 }

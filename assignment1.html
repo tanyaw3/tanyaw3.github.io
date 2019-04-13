@@ -1,25 +1,167 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+<!DOCTYPE html>
+<html>
 
-        <title>Example Student's HCDE 439 Physical Computing Page!</title> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+  <title>Tanya Wang</title>
 
-        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400" rel="stylesheet">
+</head>
 
-    </head> 
-    <body> 
+<body>
 
-        <div class="header">
-            <h1>Example Student's Assignment 1!</h1>
-            <p>
-            <img src="red-panda.jpg" width=400></a>
-            </p>
-            <p>
-            Here is all the documentation for assignment 1!
-            </p>
-        </div>
-        
-    </body>
+  <!-- Header -->
+  <div id="container">
+    <div class="triangle"></div>
+    <div class="nav">
+      <ul>
+        <li><a href="#" class="active">projects</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </div>
+    <div class="header">
+      <h1>geometric table lamp shade</h1>
+      <h2>assignment 1</h2>
+    </div>
+  </div>
+
+
+
+  </div>
+
+
+  <div class="assignmentspage">
+    <div class="assignment">
+      <img src="red-panda.jpg" width=400></a>
+    </div>
+
+    <div class="container">
+      <h2>process</h2>
+      <div class="assignment">
+        <h3>01</h3>
+        <h3>Get Inspired</h3>
+        <div class="inspo"><img src="images/a1/inspo.png"></a></div>
+        <p>
+          I start my process by looking at different geometric shapes on Pinterest. My Makerspace board is <a href="https://www.pinterest.com/tanyawang/makerspace/">here</a>.
+        </p>
+      </div>
+      <div class="assignment">
+        <h3>02</h3>
+        <h3>Sketch</h3>
+        <p>
+          I'm not strong at sketching, but I'll draw out some shapes to help me visualize the 3D nature of what I'm going to make in 2D.
+        </p>
+      </div>
+      <div class="assignment">
+        <h3>03</h3>
+        <h3>Build Vector Files</h3>
+
+        <p>
+          Some considerations:
+          <ul>
+            <li> I wanted to rotate an object evenly around a circle but couldn't quite remember how, so I watched a few YouTube videos to figure out what was going on and then went from there.
+            </li>
+            <li>
+              Determine how large of a lamp you want. I made the outside 4 and the inside 2.3.
+            </li>
+          </ul>
+        </p>
+        <p>
+          Build the top and bottom panel holders.
+        </p>
+
+        <ul>
+          <li>
+            Use the ellipse tool to make both circles. (You can change the color so it's easier to see the circles)
+          </li>
+          <li>
+            Align the two circles by
+          </li>
+          <ul>
+            <li>Selecting both circles</li>
+            <li> Press "Horizontal align center"</li>
+            <li> Press "Vertical align center"</li>
+          </ul>
+          <li>
+            Keep both circles selected.
+            Make sure the smaller one is in the front
+            In the pathfinder window, select "Minus front"
+            <img src="images/a1/pathfinder.png"></a>
+          </li>
+          <li>
+            Use the rectangle tool to make a rectangle
+            Change the width of the rectangle to match the thickness of the cardboard. My cardboard had a width of .119in, so I made mine .118in.
+          </li>
+          <li>Horizontal align the rectangle on top of the circle</li>
+          <li>Overlap the rectangle and circle that a little under half of the rectangle is in the circle</li>
+          <li>Shift select both shapes </li>
+          <li>Select rotate icon</li>
+          <div class="icon"><img src="images/a1/rotate-icon.png"></a></div>
+          <li>Option + Click the center of the circle</li>
+          <li>In the dialogue box, pick a number that can be evenly divided into 360. I picked 24.
+          </li>
+          <img src="images/a1/s2.png"><br />(Note: I forgot to overlap the rectangle and circle for this shot.)</a>
+          <li> Press copy button </li>
+          <li> Duplicate the action by pressing command + D</li>
+          <img src="images/a1/s3.png"></a>
+          <li> Delete the extra circle layers </li>
+          <li> Select all of the rectangles</li>
+          <li> Select Object > Transform > Transform Each</li>
+          <img src="images/a1/s5.png"></a>
+          <li> Change angle in "Rotate" box</li>
+          <li> Select preview</li>
+
+          <li> Select everything in the layer. Make sure the cut out circle is the very bottom layer. Go to pathfinder and select "Minus Front"</li>
+
+          <li> Change shape to have no fill and black outline</li>
+          <li> Create the bottom of the lamp by copying and pasting the circle</li>
+          <img src="images/a1/s6.png"></a>
+        </ul>
+        <p>
+          Create the panels
+        </p>
+        <ul>
+          <li> Create 2 hexagons</li>
+          <li> Set one height at 7in</li>
+          <li> The other height 6.2in </li>
+          <li> Add a guideline that cuts the shape down the middle</li>
+          <li> Delete part of the shape by</li>
+          <ul>
+            <li> Create a rectangle that meets at the guideline</li>
+            <li> Use the pathway tool to delete the layer on top
+              <img src="images/a1/s7.png"></a>
+
+            <li> Repeat the process again so the width of the top and bottom is 1/4 of what it was before</li>
+          </ul>
+          <li>Cut out the notches</li>
+          <ul>
+            <li> .119in height rectangle half way between the top of bottom of each arm
+            <li> The rectangle should be less deep into the shape to accommodate for the circle notches
+              <img src="images/a1/s8.png"></a>
+            <li> Vertically align the two
+            <li> Minus front the rectangles from the shape
+              <img src="images/a1/s9.png"></a>
+            <li> Change the fill to none
+          </ul>
+          <li>Repeat the shape 15 times</li>
+          <img src="images/a1/s10.png"></a>
+        </ul>
+
+
+        </ul>
+
+      </div>
+    </div>
+    <div class="container">
+      <h2>source files</h2>
+    </div>
+    <div class="container">
+      <h2>kit design and execution</h2>
+    </div>
+  </div>
+</body>
+
 </html>
