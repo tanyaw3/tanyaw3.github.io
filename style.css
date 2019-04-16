@@ -336,7 +336,20 @@ i {
   flex-direction: row;
   float: left;
   width: 100%;
-  margin: 150px auto;
+  margin: 150px auto 0px;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.main img {
+  width: 60%;
+  position: relative;
 }
 
 .container {
@@ -355,6 +368,7 @@ i {
 .container a {
   color: #36384C;
   font-family: 'Roboto', sans-serif;
+  text-decoration: underline;
 }
 
 .container a:hover {
@@ -374,4 +388,8 @@ i {
 
 .container .assignment .inspo img {
   width: 120%
+}
+
+.container .assignment .icon img {
+  width: 100px;
 }
