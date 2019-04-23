@@ -1,25 +1,218 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+<!DOCTYPE html>
+<html>
 
-        <title>Example Student's HCDE 439 Physical Computing Page!</title> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+  <title>Tanya Wang</title>
 
-        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400" rel="stylesheet">
+</head>
 
-    </head> 
-    <body> 
+<body>
 
-        <div class="header">
-            <h1>Example Student's Assignment 2!</h1>
-            <p>
-            <img src="red-panda.jpg" width=400></a>
-            </p>
-            <p>
-            Here is all the documentation for assignment 2!
-            </p>
-        </div>
-        
-    </body>
+  <!-- Header -->
+  <div id="container">
+    <div class="triangle"></div>
+    <div class="nav">
+      <ul>
+        <li><a href="#" class="active">projects</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </div>
+    <div class="header">
+      <h1>papercut story box</h1>
+      <h2>assignment 2</h2>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="assignmentspage">
+    <div class="assignment">
+      <div class="main">
+        <img src="images/a2/final.jpg" />
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>process</h2>
+      <div class="assignment">
+        <h3>01</h3>
+        <h3>Get Inspired</h3>
+        <p>
+          While I had the option of redoing my previous project, I thought it was a little too simple and wanted to create something that used the same concept as my previous creation but with more purpose. I immediately thought of doing some kind of
+          papercut in a box when I heard that there were two different material thicknesses. Of course, when I looked on Pinterest, many had done the same.<br /><br />My Makerspace board is <a
+            href="https://www.pinterest.com/tanyawang/makerspace/">here</a>.
+        </p>
+        <div class="inspo"><img src="images/a2/inspo-2.png" width=500></a></div>
+      </div>
+
+      <div class="assignment">
+        <h3>02</h3>
+        <h3>Sketch</h3>
+        <p>
+          Since I was less comfortable with the program, drawing was a good way for me to understand what I wanted to do before getting completely lost.
+          <br /><br />
+          <img src="images/a2/sketch.jpg" width=300 />
+        </p>
+      </div>
+
+      <div class="assignment">
+        <h3>03</h3>
+        <h3>Building Vectors in Grasshopper + Rhino</h3>
+
+        <p>
+          I've never used Grasshopper, Rhino, or anything like Grasshopper or Rhino, so I felt completely out of my comfort zone. I probably should have done the same as assignment 1 but thought it would be worthwhile to try something a little more
+          complex to understand the
+          program better. It took me hours to just understand what I was doing and I referenced a lot of video's including Nadya's video and <a href="https://www.youtube.com/watch?v=AGucq0hDnlk&t=465s">many</a>, <a
+            href="https://www.youtube.com/watch?v=Rfj1BdHws4o&t=105s">many</a>, <a href="https://www.youtube.com/watch?v=qeQzhwF2WEo">YouTube videos</a>.
+        </p>
+        <p>
+          I started by building the scene. After spending 1.5 days in Rhino and Grasshopper, Rhino wouldn't save my file and completely crashed. If not for saving most of my files in Grasshopper, I would have lost all of my work.
+        </p>
+        <p>Layered Scene in Rhino</p>
+        <img src="images/a2/scene.png">
+        <p>Layered Scene in Grasshopper</p>
+        <img src="images/a2/grasshopper.png">
+        <p>
+          I'm still not sure if I did my work the right way or not, but I've included some of my learnings and discoveries below.
+        </p>
+
+        <ul>
+          <li> Use a mouse. It's so much faster.</li>
+          <li> Plan out your layers beforehand so you can bake to them.</li>
+          <li> Copy and paste is your best friend. I would build a component once, like number slider and reuse it</li>
+          <li> Don't bake shapes until the very end</li>
+          <li> Just stay in millimeter units</li>
+          <li> Build everything together before shifting it to different layers </li>
+          <li> Always make the width of the space for the attach points smaller than the caliper measurement</li>
+        </ul>
+        <p>How to Make Curves</p>
+        <img src="images/a2/nurbs.png">
+        <ul>
+          <li>Type "Point" </li>
+          <li>Set "Multiple Points"</li>
+          <li>Type "Nurbs Curve"</li>
+          <li>Type "Number Slider"</li>
+        </ul>
+        <p> How to Move Objects</p>
+        <img src="images/a2/move.png">
+        <ul>
+          <li>Type "Move" </li>
+          <li>Connect "Geometry"</li>
+          <li>Type "Vector XYZ"</li>
+          <li>Get two "Number Slider" selections</li>
+        </ul>
+        <p> How to Duplicate items via "linear array"</p>
+        <img src="images/a2/linear.png">
+        <p> How to Merge multiple shapes to make duplication easier</p>
+        <img src="images/a2/merge.png">
+        <ul>
+          <li>Type "Merge" </li>
+          <li>Connect all the geometries together</li>
+          <li>Type "Vector XYZ"</li>
+          <li>Get two "Number Slider" selections</li>
+        </ul>
+
+
+      </div>
+
+
+      <div class="assignment">
+        <h3>04</h3>
+        <h3>Export to Illustrator</h3>
+
+        <p>
+          Fortunately, exporting from Rhino to Illustrator was pretty straightforward. </p>
+        <ul>
+          <li>Go to File</li>
+          <li>Click Export</li>
+          <img src="images/a2/export.png">
+          <li>Select Adobe Illustrator from the drop-down menu</li>
+          <li>Click Export</li>
+          <li>Set Export Options-- I wanted it to maintain scale</li>
+          <img src="images/a2/exportoptions.png">
+
+
+          <p>
+            When I opened the file in Illustrator, I made a few edits to make it print ready:</p>
+          <ul>
+            <li>Change the stroke to .001pt, so it'll print as a vector file</li>
+            <li>This caused my curves to render a little strangely</li>
+            <img src="images/a2/error.png">
+            <li>To solve this, I used the Direct Selection Tool, selected the different anchor points, and moved it around to solve the issue</li>
+            <img src="images/a2/fix.png">
+            <li>Then, I moved the vectors to different art boards for printing. I knew I was lasercutting on 8.5"x11" paper, so I split it across three boards</li>
+            <img src="images/a2/ai.png">
+            <li>Since the stand pieces would be lasercut on cardboard, I put that on a separate file</li>
+            <img src="images/a2/stand.png">
+          </ul>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <h2>kit design and execution</h2>
+
+      <div class="assignment">
+        <h3>01</h3>
+        <h3>Lasercutting Details</h3>
+        <p>This was a little trickier since I was using a new material (110 pound cardstock). I ended up using the print settings from Epilog for a <a href="https://www.epiloglaser.com/resources/sample-club/fathers-day-card-cutting.htm">Father's Day
+            card</a> and it actually worked well. </p>
+
+        <p> For cardboard, I used the same settings as last time.</p>
+
+        <h3>Notes</h3>
+        <ul>
+          <li>I cut duplicates of all the paper components because I wanted to glue them together for more sturdiness since a few of the cuts made the piece quite delicate</li>
+          <li>I had to recut the frames since the gaps were too wide</li>
+        </ul>
+        </p>
+      </div>
+      <div class="assignment">
+        <h3>02</h3>
+        <h3>Assembly Execution Details</h3>
+
+        <p>Assembly for this was a little trickier since it required some match up between the top and bottom frame and paper pieces.</p>
+        <img src="images/a1/execution.jpg" width=300 />
+      </div>
+    </div>
+
+
+    <div class="container">
+      <h2>source files</h2>
+      <div class="assignment">
+        <ul>
+          <li><a href="files/a2/ai.zip">Final Illustrator files</a></li>
+          <li><a href="files/a2/mountain-scene.3dm">Rhino and Grasshopper File</a></li>
+
+          <li>Cardboard Print Settings:</li>
+          <ul>
+            <li>Speed: 25%</li>
+            <li>Power: 100%</li>
+            <li>Frequency: 50%</li>
+          </ul>
+          <li>Paper Print Settings:</li>
+          <ul>
+            <li>Speed: 70%</li>
+            <li>Power: 30%</li>
+            <li>Frequency: 50%</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <h3><a href="index.html">back</a></h3>
+
+    </div>
+
+  </div>
+</body>
+
 </html>
