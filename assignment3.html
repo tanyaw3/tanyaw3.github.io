@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+  <title>Tanya Wang</title>
+
+  <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div id="container">
+    <div class="triangle"></div>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html" class="active">all projects</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </div>
+    <div class="header">
+      <h1>i love lamp</h1>
+      <h2>assignment 3</h2>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="assignmentspage">
+    <div class="assignment">
+      <div class="main" style="max-width:800px;">
+        <img src="images/a3/lightoff.jpg" /><img src="images/a3/lighton.jpg" />
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>process</h2>
+      <div class="assignment">
+        <h3>01</h3>
+        <h3>Get Inspired</h3>
+        <p>
+          More Pinterest inspiration-- little did I know that this week would be known as a series of unfortunate maker events. I wanted to do something a little organic and leverage the idea of a living hinge to create something flexible.
+          <br /><br />My Makerspace board is <a href="https://www.pinterest.com/tanyawang/makerspace/">here</a>.
+        </p>
+        <div class="inspo"><img src="images/a3/inspo.png" width=500></a></div>
+      </div>
+
+      <div class="assignment">
+        <h3>02</h3>
+        <h3>Sketch</h3>
+        <p>
+          Sketching to get an idea of what I could build. I ended up spending a lot of time using my sketch as a way to track measurements of different components.
+          <br /><br />
+          <img src="images/a3/sketch.jpg" width=300 />
+        </p>
+      </div>
+
+      <div class="assignment">
+        <h3>03</h3>
+        <h3>Building 3D models and vectors in Grasshopper + Rhino</h3>
+        <p>
+          The primary video I referenced taught me how to do <a href="https://www.youtube.com/watch?v=zbRcHE1UelI">OffsetCrv</a>.
+        </p>
+        <p>
+          Since I spent more time last week learning Rhino and Grasshopper, I leveraged it for my project this week by using it as a way to do my base model, which was fortunate because ended up doing a lot of resizing. I also ended up building some
+          things I didn't use as well as building things that just didn't work when printed since the offset curve ended up throwing off my measurements. Fortunately my lampshade connector worked well for the lamp set-up I used and I was able to use
+          that radius to update my other shapes. <br /><br />
+
+          The carnage of models that didn't meet requirements in Rhino<br />
+          <img src="images/a3/rhino-extra.png"><br /><br />
+          What I used (left) vs what I didn't use (right) in Grasshopper<br /><br />
+          <img src="images/a3/grasshopper.png">
+
+          <br /><br /> I ended up landing on:
+          <ul>
+            <li>Lamp post: 18.5mm radius + 2mm offset outward</li>
+            <li>Base connector: 20.8 + 2mm offset outward</li>
+            <li>Base: add 2mm downward for more thickness without adding too much print time</li>
+          </ul>
+        </p>
+
+
+
+
+
+      </div>
+
+
+      <div class="assignment">
+        <h3>04</h3>
+        <h3>Export to Illustrator</h3>
+
+        <p>
+          I used the same steps as <a href="assignment2.html">assignment 2</a> for exporting:
+        </p>
+      </div>
+
+      <div class="assignment">
+        <h3>05</h3>
+        <h3>Export to STL File for 3D Printing</h3>
+
+        <p>
+          Exporting from Rhino to an STL file for 3D printing is also straight forward.
+        </p>
+        <ul>
+          <li>Click on the 3D model(s) that you would like to export</li>
+          <li>Go to File</li>
+          <li>Click Export selected</li>
+          <li>Select STL from the drop-down menu</li>
+          <li>Click Export</li>
+          <li>Set Export Options-- I wanted it to maintain scale</li>
+        </ul>
+
+
+      </div>
+
+    </div>
+
+    <div class="container">
+      <h2>kit design and execution</h2>
+
+      <div class="assignment">
+        <h3>01</h3>
+        <h3>3D Printing</h3>
+        <p>This might as well be called a series of unfortunate events. I'm an admin of our Makers Club at work and unfortunately, one of the printers has been experiencing some serious print issues. I wanted to use this week as opportunity to fix it
+          and now it's semi workable but still not the best. I think spent 10 hours trying to fix the printer and in the process cut my thumb on the machine. Now there is a little piece of me that is probably permanently a part of that machine. I
+          ended up printing the lamp in 3 batches.</p>
+
+        <p>I used Ultimaker Cura to print everything. I dropped the file in of the print that I wanted, made sure it fit in the printer space, and printed. This is actually one of the reasons why I had to redo some of the models, the model was too
+          big for the printer.<br /><br />
+          <img src="images/a3/cura.png">
+          <ul>
+            <li>Batch 1- only able to use the lampshade connector. The lamp was originall 3 pieces for the base. The top piece could fit all of the eletrical components but was a little too narrow. The other two pieces couldn't fit the plug for the
+              electrical components. There was all no snapping of the base to the lamp post. </li>
+            <img src="images/a3/batch1.jpg">
+            <li>Batch 2- nothing could be used because I used the broken printer</li>
+            <img src="images/a3/batch2.jpg">
+            <li>Batch 3- success on the base and lamp post</li>
+            <img src="images/a3/batch3.jpg">
+        </p>
+      </div>
+
+      <div class="assignment">
+        <h3>02</h3>
+        <h3>Lasercutting</h3>
+        <p>Mo' printing, mo' problems.
+          <ul>
+            <li>Too big</li>
+            <ul>
+              <li>After exporting the lampshade into Illustrator, I realized I made the lampshade too big and since I had resized my lamp base, I also needed to resize my lampshade</li>
+              <li>I decided to do this in Illustrator since I thought it would be quicker since I was in the program. At this point, I realized I would need to resize the holes so that it would fit on my connector. I decided to make sure the
+                alignement was right, but I pretty much took a guess at the size needed for the hole (knowing that cardboard is forgiving) and then copied and pasted the holes across the lampshades</li>
+            </ul>
+            <li>Fire</li>
+            <ul>
+              <li>I decided to cut the lampshade into cardboard salvaged from an Amazon box. I used the same print settings as last time. It worked for my test lampshade but when I tried it on a second one, I lit the cardboard on fire. After that, I
+                increased the speed of my print from 25% to 35% and that helped. </li>
+              <li>I also realized that in the export process, certain lines were being repeated. Given how I layered my files, as soon as the holes to connect to the lampshade connected were
+                cut out as was the ellipse shape, I could pause the print.</li>
+              <img src="images/a3/fire.jpg">
+            </ul>
+            <li> Finally, success</li>
+
+            <iframe width="750" height="420" src="https://www.youtube.com/embed/XhWOCn6QczM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </iframe>
+          </ul>
+
+        </p>
+      </div>
+
+      <div class="assignment">
+        <h3>03</h3>
+        <h3>Assembly Execution Details</h3>
+
+        <p>Putting together the 3D model. I knew I was succesful when...</p>
+        <ul>
+          <li>The lamp post snapped into the base. This was a moment of joy that I thought would never happen after all of the fails.</li>
+          <li>The electrical cord and button could full fit through both pieces</li>
+          <li>I created a small cut out at the lamp base that could fit the cord.</li>
+          <li> Everything nestled together well</li>
+          <li> The lampshade fit well on the connector, which honestly was pure luck since I decided to wing it with a trial and error approach. </li>
+        </ul>
+        </p>
+
+        <p>I decided to paint parts of the lampshade to make it look a little more elegant than the Amazon cardboard print.</p>
+        <img src="images/a3/paint.jpg" width=300 />
+        <p>All the pieces except the lightbulb</p>
+        <img src="images/a3/assembly.jpg" width=300 />
+        <p>And we're done</p>
+        <img src="images/a3/lighton.jpg" width=300 />
+      </div>
+
+      <div class="assignment">
+        <h3>04</h3>
+        <h3>Bonus Lamp</h3>
+
+        <p>I took the lampshade from project 1 and stuck it on top of my 3D printed lamp base and it actually looked way better than what I made for this project. My biggest limitation was the length of the poles for the 3D printed lamp connector. I
+          had to cut them down significantly to make them fit the shape. If I had made it out of cardboard, it would have been better, so I could increase the length. The other option was to create a shape that had more height. </p>
+
+        <img src="images/a3/bonuslamp.jpg" width=250 /><img src="images/a3/bonuslamp-2.jpg" width=250 />
+      </div>
+
+    </div>
+
+
+    <div class="container">
+      <h2>source files</h2>
+      <div class="assignment">
+        <ul>
+          <li><a href="files/a3/lampshade-final.ai">Final Illustrator files</a></li>
+          <li><a href="files/a3/4-30-base.3dm">Rhino file</a></li>
+          <li><a href="files/a3/lamp.gh">Grasshopper file</a></li>
+          <li><a href="files/a3/STL.zip">STL files</a></li>
+          <li><a href="files/a3/DraftFiles.zip">Draft files</a></li>
+          <li>Cardboard Print Settings for living hinge:</li>
+          <ul>
+            <li>Speed: 35%</li>
+            <li>Power: 100%</li>
+            <li>Frequency: 50%</li>
+          </ul>
+          <li>3D Print Settings:</li>
+          <ul>
+            <li>In-fill: 20%</li>
+            <li>Layer height: .2mm</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <h3><a href="index.html">back</a></h3>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
