@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+  <title>Tanya Wang</title>
+
+  <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div id="container">
+    <div class="triangle"></div>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html" class="active">all projects</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </div>
+    <div class="header">
+      <h1>rolling desert</h1>
+      <h2>assignment 4</h2>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="assignmentspage">
+    <div class="assignment">
+      <div class="main">
+
+        <img src="images/a4/finalv2.jpg" />
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>process</h2>
+      <div class="assignment">
+        <h3>01</h3>
+        <h3>Get Inspired</h3>
+        <p>
+          At first, I didn't really know what search term I could use to find mechnical projects. After some stumbling and lucky, I found a lot of wood toys, Automata, and kinetic sculptures.
+          <br /><br />My Makerspace board is <a href="https://www.pinterest.com/tanyawang/makerspace/">here</a>.
+        </p>
+        <div class="inspo"><img src="images/a4/inspo.png" width=500></a></div>
+      </div>
+
+      <div class="assignment">
+        <h3>02</h3>
+        <h3>Sketch</h3>
+        <p>
+          Sketching to get an idea of what I could build. I ended up spending a lot of time using my sketch as a way to track measurements of different components.
+          <br /><br />
+          <img src="images/a4/sketch.jpg" width=300 />
+        </p>
+      </div>
+
+      <div class="assignment">
+        <h3>03</h3>
+        <h3>Building 3D models and vectors in OnShape</h3>
+        <p>
+          I leveraged Joshua's in-class tutorial and the video that Krista so graciously recorded and uploaded as my primary reference point. While Rhino had a lot of tutorials to show you how to do things, there weren't as many for OnShape. I think
+          there may be an expectation that it's so easy to use that a tutorial isn't really needed or it just isn't as prolific. Either way, I spent a lot of time clicking on random things and using the Dimension button to try to force things to be
+          the right shape.
+        </p>
+        <p>I ended up 3D printing a pulley for my handle since I wasn't completely sure how far I would get and I wanted options for my motion.</p>
+        So many dimensions:<br /><br />
+        <img src="images/a4/dimensions.png"><br /><br />
+        A sample of all the shapes I made: <br /><br />
+        <img src="images/a4/onshape.png"><br /><br />
+        <p>
+          Since I planned on using a dowel as a way to hang the Cams that I would make, I had to make a few key measurements and recorded it on my sketch.
+          <ul>
+            <li> Dowel width- Even thought the package said it would be a width of .25" or 6.35mm, the actual dowel was closer to 6.17mm</li>
+            <li> Cardboard thickness </li>
+            <li> Wood thickness- Since I would have poles that would work around the cam, I wanted to be sure that the side of the cam was smooth and wouldn't get worn down. So I decided to use wood </li>
+          </ul>
+        </p>
+
+        </p>
+
+
+
+
+
+      </div>
+
+
+      <div class="assignment">
+        <h3>04</h3>
+        <h3>Export to Illustrator</h3>
+
+        <p>
+          Exporting to Illustrator is pretty straightforward with a key option to pay attention to when you open the file in Illustrator to make sure you don't lose any of your measurements.
+          <ul>
+            <li>Select the layer that you'd like to export </li>
+            <li>Right click it</li>
+            <li> Change the file name and select the DXF format </li>
+            <li> Click Export</li>
+            <li> Open the file in Illustrator</li>
+            <li> Select "Scale by:"</li>
+            <li> Change the dropdown that says "Inches" to "Millimeters"</li>
+            <li> Change "Unit(s)" to 1 since the original 25.4 is how many millimeters equals 1 inch</li>
+            <img src="images/a4/mm.png"><br /><br />
+            <li> Change the stroke width to .001 to prepare for vector cutting </li>
+          </ul>
+        </p>
+
+        <p>
+          I exported each folder into its own AI file to make cutting easier.
+        </p>
+        Stucture<br /><br />
+        <img src="images/a4/structureai.png"><br /><br />
+
+        Cams <br /><br />
+        <img src="images/a4/camai.png"><br /><br />
+
+        Poles that would connect the cams to the hexagons<br /><br />
+        <img src="images/a4/poleai.png"><br /><br />
+
+        Hexagon that would hold the desert scene<br /><br />
+        <img src="images/a4/hexai.png"><br /><br />
+
+        Cactus that would live on the hexagons. I also made a tent to potentially use in the middle of the scene<br /><br />
+        <img src="images/a4/cactusai.png"><br /><br />
+      </div>
+
+      <div class="assignment">
+        <h3>05</h3>
+        <h3>Export to STL File for 3D Printing</h3>
+
+        <p>
+          Exporting from OnShape to an STL file for 3D printing was similar to the process for Illustrator except you select "STL" as the exporting file type instead of DXF. I doubled the number of pulleys in Cura.
+        </p>
+        <p>
+          Given the shape of the pulleys, I decided to generate supports with breakaway.
+        </p>
+        <img src="images/a4/cura.png"><br /><br />
+
+
+      </div>
+
+    </div>
+
+    <div class="container">
+      <h2>kit design and execution</h2>
+
+      <div class="assignment">
+        <h3>01</h3>
+        <h3>3D Printing</h3>
+        <p>The printer at work is still down, so I strategically planned to go in the off hours to have the best chance of getting it. It worked with limited success, but at least I tried. I had to print the handle twice since the filament jammed the
+          first time. </p>
+        <img src="images/a4/3d.jpg"><br /><br />
+
+      </div>
+
+      <div class="assignment">
+        <h3>02</h3>
+        <h3>Lasercutting</h3>
+        <p>I'm always forgetting materials and this visit was no exception. Fortunately, there was scrap material that was just large enough for my cams. I used a lot of cardboard.
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/pK1wAY9UrK4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </p>
+      </div>
+
+      <div class="assignment">
+        <h3>03</h3>
+        <h3>Assembly Execution Details</h3>
+
+        <p>Assembly was tricky. A few things I realized at 2AM</p>
+        <ul>
+          <li>The pole should NOT come down to a point. It should have had a wide base. I ended up cutting off the point with scissors, cutting one of the excess hexagons into each of its sides, and hot glueing it to the end.</li>
+          <img src="images/a4/tips.jpg"><br /><br />
+          <img src="images/a4/flat.jpg"><br /><br />
+          <li>The hole around the pole should leave enough space to let the poles smoothly move up and down. I ended up smooshing the corrugated cardboard so that it could do this more seamlessly</li>
+          <li>Hot glue is your best friend.</li>
+          <ul>
+            <li>Hot glue... the cams together to create a consistent shape</li>
+            <li>Hot glue... the tips of the structure so the cardboard is more stable and snaps into place</li>
+            <li>Hot glue... a broader base to the poles so it doesn't just tip over</li>
+            <li>Hot glue... all the scene pieces to the hexagon and the hexagon to the poles</li>
+            <li>Hot glue... your fingers on accident to remind you that you're alive</li>
+          </ul>
+        </ul>
+        </p>
+        <p>Once I figured that out, it was more smooth sailing</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qbyisCLUwz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>And we're done</p>
+        <iframe src="https://giphy.com/embed/3omK0eSYgd85dcv7uS" width="370" height="580" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>materials</h2>
+      <div class="assignment">
+        <ul>
+          <li>One 1/4" dowel</li>
+          <li>Hot glue gun</li>
+          <li>Thick cardboard (from Costco)</li>
+          <li>Wood</li>
+          <li>Thin cardboard (Amazon box)</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <h2>source files</h2>
+      <div class="assignment">
+        <ul>
+          <li><a href="https://cad.onshape.com/documents/72fa6700750a05cfb6ccd307/w/2e42ac46f9fc3e64647c399d/e/7860c6080173860db738515e">Onshape file</a></li>
+          <li><a href="files/a4/ai.zip">Illustrator files</a></li>
+          <li><a href="files/a3/pulley-2.stl">STL file for handle</a></li>
+          <li>Wood Cam Print Settings</li>
+          <ul>
+            <li>Speed: 7%</li>
+            <li>Power: 100%</li>
+            <li>Frequency: 50%</li>
+          </ul>
+          <li>Thick Cardboard Print Settings</li>
+          <ul>
+            <li>Speed: 7%</li>
+            <li>Power: 100%</li>
+            <li>Frequency: 50%</li>
+          </ul>
+          <li>Desert scene cardboard Print Settings</li>
+          <ul>
+            <li>Speed: 25%</li>
+            <li>Power: 100%</li>
+            <li>Frequency: 50%</li>
+          </ul>
+          <li>3D Print Settings:</li>
+          <ul>
+            <li>In-fill: 20%</li>
+            <li>Layer height: .2mm</li>
+            <li>Generate Supports selected</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <div class="main">
+      <h3><a href="index.html">back</a></h3>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
