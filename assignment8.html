@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+  <title>Tanya Wang</title>
+
+  <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div id="container">
+    <div class="triangle"></div>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html" class="active">all projects</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </div>
+    <div class="header">
+      <h1>ferris wheel of sweets</h1>
+      <h2>assignment 8</h2>
+    </div>
+  </div>
+
+
+  <div class="assignmentspage">
+    <div class="assignment">
+      <div class="main">
+        <img src="images/a8/finalstack.jpg" />
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>concept</h2>
+      <div class="assignment">
+        <p>
+          Build a moving ferris wheel that holds ice cream cones and can be used at a fun event. For my particular use case, I wanted to use the chocolate ice cream cone molds from one of my previous projects.
+        </p>
+        <p> Even though I knew what I wanted to build, I went to Pinterest to see if there was anything I could learn. Apparently, a lot of people make cupcake ferris wheels</p>
+        <div class="inspo"><img src="images/a8/inspire.png" width=500></a></div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>technical implementation</h2>
+      <div class="assignment">
+        <h3>01</h3>
+        <h3>Building parametric CAD model with Rhino and Grasshopper</h3>
+        <p>
+          Leverage the ability to easily change measurements for pieces that need to fit together.<br /><br />
+          A few tips:
+          <ul>
+            <li>Group your work so it's easier to reference later</li>
+            <li>Remember to bake. I had a moment where I was exporting but nothing exported until I realized I forgot to bake my models </li>
+            <li>Bake to different layers, I find that this helps me keep my shapes more organized</li>
+            <li>Export as an Adobe Illustrator (.ai) file</li>
+          </ul>
+        </p>
+        <p>For more details on how to use Rhino, check out <a href="assignment2.html"> Assignment 2</a></p>
+        <div class="inspo"><img src="images/a8/rhino-gh.png" width=500></a></div>
+      </div>
+      <div class="assignment">
+        <h3>02</h3>
+        <h3>Building crank and booth seat CAD models with Onshape</h3>
+        <p>
+          Since I wanted to focus more on building a single, solid component, and ensure that it fit with existing pieces like the dowel and casted chocolate cones, I decided to use Onshape to build them. <br /><br />
+          <div class="inspo"><img src="images/a8/onshape.png"></a></div><br />
+          I made sure to:
+          <ul>
+            <li>Label each layer with a specific name</li>
+            <li>Check and recheck dimensions. Since I was using the same stock dowel part as my previous project, I wanted to be sure I was using the same dimensions since it had such a great fit</li>
+          </ul>
+          <div class="inspo"><img src="images/a8/onshape-2.png"></a></div>
+        </p>
+      </div>
+
+      <div class="assignment">
+        <h3>03</h3>
+        <h3>Build a silicone mold and cast chocolate cones</h3>
+        <p>Take a look at <a href="assignment6.html">Assignment 6</a> for detailed instructions on how to create a food-safe mold with a 3D print and food-grade silicone.</p>
+
+        <div class="inspo"><img src="images/a6/mold-prep4.jpg" width=400 /></div>
+        <br />
+        <div class="inspo"><img src="images/a6/finalstack.jpg" width=400 /></div>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <h2>kit design and execution</h2>
+
+      <div class="assignment">
+        <h3>01</h3>
+        <h3>3D print hand crank</h3>
+        <p><b>Prepare the file</b>
+          <ul>
+            <li>Export the file from Onshape as a DXF file</li>
+            <li> Open the file in the printer software. I use Cura for my Ultimaker printers</li>
+            <li> Make sure the size is maintained with a 1:1 millimeter transition</li>
+            <li>Save the file to a USB stick</li>
+          </ul>
+        </p>
+        <div class="inspo"><img src="images/a8/cura.png" width=500></div>
+        <p><b>Print</b><br /><br />
+          When printing, make sure to stay with the print until the first layer has successfully printed.
+        </p>
+
+        <p><b>3D Print Settings and Details:</b>
+          <ul>
+            <li>Infill: 40% (since I wanted it to be sturdier and have more heft)</li>
+            <li>No supports needed since there was always a stable layer underneath each top layer</li>
+            <li>Material: PLA</li>
+          </ul>
+        </p>
+        <div class="inspo"><img src="images/a8/crank.jpg" width=500></div>
+        <p><b>Pull off excess plastic</b><br /><br />
+          Pull off the build layer plastic (the raggedy edges on my crank in the above picture)
+        </p>
+      </div>
+
+
+
+      <div class="assignment">
+        <h3>02</h3>
+        <h3>Laser cut</h3>
+        <p><b>Before you go</b></p>
+        <p>To make sure everything fit, I brought the package of dowels and the 3D print of the original ice cream cone mold to see if the seat I made was a good fit.</p>
+
+        <ul>
+          <li><b>Plan to wait for a lasercutter. </b> <br />
+            It was about 1.5 hours before I finally got to cut.</li>
+          <li><b>Go from smaller pieces to larger pieces</b><br />
+            Instead of cutting out the ferris wheel first, I cut out the booths first since that would be the main component that I would need to work around from a sizing issue. After successfully laser cutting cardboard, I moved to wood to see how
+            different the tolerances were.</li>
+          <li><b>Test on cheaper materials, like cardboard</b><br />
+            I ended up having to resize my cut downward after the first laser cut since the holes were too big because I forgot to translate my diamter measurement to a radius measurement from Onshape to Grasshopper.
+          </li>
+          <div class="inspo"><img src="images/a8/cardboard-cuts.jpg" width=500></div>
+          <li><b>Do a fit test immediately</b><br />
+            Make sure to test fit the pieces while you're near the laser cut to ensure everything fits together as intended</li>
+          <li><b>Reuse materials when possible </b> <br />
+            Don't throw away the rounded triangle ferris wheel cut outs, you'll need about 6 of them later </li>
+        </ul>
+
+        <p><b>Prepare the file and materials</b></p>
+        <ul>
+          <li>Open the exported files in Adobe Illustrator including ferris wheel, stand, and booth sides from Rhino and the seat from Onshape (DXF file that can be opened in Illustrator)</li>
+          <li>Make sure it's imported in at a 1:1 millimeter ratio</li>
+          <li>Change stroke width to .001 pt. It will look barely visible on screen.</li>
+          <li>Put each element on its own layer to make editing easier when you laser cut. Sometimes, certain lines won't cut as well if the wood used to laser cut isn't flat. Instead of recutting everything, this gives you the flexibility to only
+            cut that one area instead of everything.</li>
+        </ul>
+        <div class="inspo"><img src="images/a8/illustrator.png" width=500></div>
+        <p><b>Set-up print settings and laser settings</b><br /><br /> For more details on how to do this, check out <a href="assignment1.html">Assignment 1</a></p>
+
+        <p><b>Print</b><br />
+          <p>Lasercut on cardboard first</p>
+          <div class="inspo"><img src="images/a8/cardboardlaser.jpg" width=500></div>
+
+          <p>Once the fit is established, lasercut on your actual material</p>
+          <div class="inspo"><iframe width="120%" height="415" src="https://youtu.be/ErwicPK_gvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <p><b>Laser Cut Settings:</b>
+            <ul>
+              <li>Thin Cardboard: 20% speed, 100% power, 50% frequency</li>
+              <li>Thick Cardboard: 10% speed, 100% power, 50% frequency</li>
+              <li>Wood: 6% speed, 100% power, 50% frequency</li>
+            </ul>
+          </p>
+      </div>
+
+      <div class="assignment">
+        <h3>03</h3>
+        <h3>Cut and smooth dowels</h3>
+        <p>Cut dowels to 1" pieces. I actually learned a few different tips around cutting dowels that were both pretty successful</p>
+
+        <p><b>Dowel Cutting Tips</b>
+          <ul>
+            <li>There was someone in the Mill that shared this tip since I was using a mini saw and table clamp. If using a saw to cut the dowel, cut a notch on one side of the dowel and then cut from the other side to reduce splintering</li>
+            <br />
+            <div class="inspo"><img src="images/a8/split.jpg" width=500></div>
+            <br />
+            <div class="inspo"><img src="images/a8/dowel-notch.jpg" width=500></div>
+            <li>Online, I learned that you can actually use dog nail cutting scissors to make a clean cut. I only used this tip once to cut off the extra part of my main ferris wheel pole, but it made SUCH a clean cut and was so easy to use. I kind
+              of wish I did this for all the parts </li>
+            <li>I ended up using scissors to smooth out the rough edges</li>
+            <div class="inspo"><img src="images/a8/smooth-dowel.jpg" width=500></div>
+          </ul>
+        </p>
+      </div>
+
+
+
+      <div class="assignment">
+        <h3>04</h3>
+        <h3>Put everything together</h3>
+        <p>Remember to wipe off the excess ash from the laser cutter before starting</p>
+        <b>Build the booths</b>
+        <ul>
+          <li>Set up your hot glue gun and glue sticks</li>
+          <li>Fit the sides of the seat to the bottom of the seat. Glue the edges for extra security.</li>
+          <li>Mark the sides of the booths to ensure the dowels are glued evenly to both sides.
+            Use a pen to mark the middle of the seat to make sure it's balanced. (In hindsight, I should have made a mark for this while I was making the seat sides, so it's a design improvement for next time.)
+          </li>
+          <div class="inspo"><img src="images/a8/booth-measure.jpg" width=500></div><br />
+          <li>Glue the dowels to the side of the seat </li>
+          <li>Set aside and let cool </li>
+        </ul>
+        <b>Connect the ferris wheel + seats and test its turning capability</b>
+        <ul>
+          <li>Put one side of the ferris wheel on a table on a slightly lifted surface in the middle. You can use your leftover triangles to create space </li>
+          <li>Connect the booths to the holes. Make sure all the seats are facing the same direction</li>
+          <li>Put the other side of the ferris wheel on top and make sure the booth is connected on both sides.</li>
+          <li>Spin the wheel to make sure it's turning and the seats are flipping downward. If any look stuck, you can use the CAD model of the ice cream cone used for the mold as a slight weight.</li>
+          <li>Hot glue one side of the ferris wheel to a full length dowel through it's center point</li>
+          <li>Move the other side until there's enough space so the seats aren't right up against the carousel since that will create more friction and make it hard for the seat to maintain its direction</li>
+          <li>Glue the other ferris wheel's center point to the dowel. Test and move as necessary. You may notice that the booths may fall out from one side or the other, which leads to our next step.</li>
+          <li>Create little caps for the dowels sticking out of the booth by putting a dab of hot glue on top of the pole and letting it dry. By making the width of the dowel increase, the sides of the booth can't fall out</li>
+        </ul>
+        <b>Add the stand</b>
+        <ul>
+          <li>Now add the triangles. You'll notice that if you put the triangles/stand right up to the ferris wheel, it will hit the sides of the booth and stop turning, so make sure there's space </li>
+          <li>Test by placing the ferris wheel in between the triangles on an even surface and test spinning</li>
+          <li>Once satisfied, add hot glue to the sides of the stand since we don't want it to move with the ferris wheel</li>
+        </ul>
+        <b>Make stand supports</b>
+        <ul>
+          <li>Take the leftover triangle pieces from the carousel and glue 2 sets with 3 triangles glued together in each set </li>
+          <li>Test where the supports should be before glueing to see which points add the most stability. The wood I used was slightly bent and warped, so I had to offcenter my supports</li>
+          <li>Both triangle sets will be in between the stands. Glue one set of 3 to one leg and one set of 3 to the other</li>
+        </ul>
+        <b>Try spinning it again to see if it works as intended</b>
+        <div class="inspo"><iframe width="120%" height="415" src="https://youtu.be/AuQc6ilddI4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </p>
+      </div>
+
+      <div class="assignment">
+        <h3>05</h3>
+        <h3>Finishing</h3>
+        <ul>
+          <li>Paint the ferris wheel. You'll probably need 2 coats for a more even finish.</li>
+          <li>Cut out the parchment paper to fit around the chocolate cones. </li>
+      </div>
+    </div>
+
+
+
+
+    <div class="container">
+      <h2>source files</h2>
+      <div class="assignment">
+        <h3>Build Files</h3>
+        <ul>
+          <li><a href="https://cad.onshape.com/documents/bd9d4b9df627bbcca2e35aef/w/620ed4d594797a3ca5ce299c/e/3b378a6b2b869f4c40eb2776">Ferris Wheel Crank CAD model, Onshape</a></li>
+          <li><a href="files/a8/rhino-gh.zip"> Ferris Wheel and Stand parts</a> Rhino and Grasshopper files</li>
+          <li><a href="https://cad.onshape.com/documents/44855af55466ae6e413c7e5a/w/9412ff1f560b7412219ee1f9/e/39ef1b7399b537bb49bc1be4">Booth seat, Onshape</a></li>
+          <li><a href="files/a8/booth-seat-6-2.dxf"> Booth Seat DXF file</a></li>
+          <li><a href="https://www.thingiverse.com/thing:451445">Ice Cream Cone made by Drawpen</a> (for more details, read <a href="assignment6.html">assignment 6</a>)</li>
+        </ul>
+
+        <h3>Final Files</h3>
+        <ul>
+          <li><a href="files/a8/crank.stl">Ferris Wheel Crank STL File</a></li>
+
+          <li><a href="files/a8/ai.zip">Final AI files</a> for laser cutting</li>
+
+        </ul>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>bill of materials + sourcing</h2>
+
+      <div class="assignment">
+
+        <table style="width:120%; background-color: white;">
+          <tr>
+            <th style="text-align:left;">Where is it used?</th>
+            <th style="text-align:left;">Item</th>
+            <th style="text-align:left;">Quantity</th>
+            <th style="text-align:left;">Sourcing Details</th>
+          </tr>
+          <tr>
+            <td>ferris wheel, booth, and stand</td>
+            <td>Cardboard</td>
+            <td>Flexible</td>
+            <td>Must allow for 1-2 rounds of a test print of the ferris wheel (15"x15") and stand (15"x17"). I used two, medium Amazon boxes.</td>
+          </tr>
+          <tr>
+            <td>ferris wheel, booth, and stand</td>
+            <td>Wood</td>
+            <td>3 pieces of 1/4" wide, 18x32"</td>
+            <td>You can buy it at the Mill</td>
+          </tr>
+          <tr>
+            <td>ferris wheel, booth, and stand</td>
+            <td>1/4" Dowel</td>
+            <td>1 bag of dowels for the carousel</td>
+            <td>You can go to any crafts store like Joanne's or Blick</td>
+          </tr>
+          <tr>
+            <td>ferris wheel crank</td>
+            <td>Filament</td>
+            <td>1 roll</td>
+            <td>Both Amazon and 3D universe have good filament options at a lower price</td>
+          </tr>
+          <tr>
+            <td>ferris wheel and booth</td>
+            <td>hot glue gun</td>
+            <td>1</td>
+            <td>Any crafts store like Joanne's or Amazon</td>
+          </tr>
+          <tr>
+            <td>ferris wheel and booth</td>
+            <td>hot glue sticks</td>
+            <td>1 bag</td>
+            <td>Any crafts store like Joanne's or Amazon</td>
+          </tr>
+          <tr>
+            <td>ferris wheel and booth</td>
+            <td>paper towels</td>
+            <td>1 roll</td>
+            <td>grocery store</td>
+          </tr>
+          <tr>
+            <td>ferris wheel and booth</td>
+            <td>paint</td>
+            <td>2 bottles of different colors</td>
+            <td>Any crafts store like Joanne's or Amazon</td>
+          </tr>
+          <tr>
+            <td>ferris wheel and booth</td>
+            <td>paint brush</td>
+            <td>1</td>
+            <td>Any crafts store like Joanne's or Amazon</td>
+          </tr>
+          <tr>
+            <td>booth</td>
+            <td>measuring tape or ruler</td>
+            <td>1</td>
+            <td>Any crafts store like Joanne's or Amazon</td>
+          </tr>
+          <tr>
+            <td>booth</td>
+            <td>mini saw (option 1 for cutting dowels)</td>
+            <td>1</td>
+            <td>Available in the Mill</td>
+          </tr>
+          <tr>
+            <td>booth</td>
+            <td>dog nail cutters (option 2 for cutting dowels)</td>
+            <td>1</td>
+            <td>Found at pet stores or Amazon</td>
+          </tr>
+          <tr>
+            <td>chocolate cone</td>
+            <td>chocolate melty disks</td>
+            <td>2 pounds</td>
+            <td>These can be pricey but are a great deal at Winco. It's under $3 a pound</td>
+          </tr>
+          <tr>
+            <td>chocolate cone mold</td>
+            <td>food grade silicone</td>
+            <td>1 pound</td>
+            <td><a href="https://www.makeyourownmolds.com/shop/copyflex/">Makeyourownmolds.com</a></td>
+          </tr>
+          <tr>
+            <td>chocolate cone mold</td>
+            <td>disposable cup</td>
+            <td>1</td>
+            <td>grocery store</td>
+          </tr>
+          <tr>
+            <td>chocolate cone mold</td>
+            <td>disposable spoon</td>
+            <td>3</td>
+            <td>grocery store</td>
+          </tr>
+          <tr>
+            <td>chocolate cone mold</td>
+            <td>disposable bowl</td>
+            <td>2</td>
+            <td>grocery
+          <tr>
+            <td>chocolate cone</td>
+            <td>parchment paper</td>
+            <td>n/a</td>
+            <td>Most grocery stores</td>
+          </tr>
+          <tr>
+            <td>chocolate cone mold</td>
+            <td>scale</td>
+            <td>n/a</td>
+            <td>Amazon</td>
+          </tr>
+          <tr>
+            <td>chocolate cone mold</td>
+            <td>plastic bowl</td>
+            <td>1</td>
+            <td>Amazon or grocery store</td>
+          </tr>
+          <tr>
+            <td>chocolate cone mold</td>
+            <td>spatula</td>
+            <td>1</td>
+            <td>Grocery store or Amazon</td>
+          </tr>
+          <tr>
+            <td>cone filling</td>
+            <td>melon</td>
+            <td>1</td>
+            <td>Grocery store</td>
+          </tr>
+          <tr>
+            <td>cone filling</td>
+            <td>whipped cream</td>
+            <td>1 can</td>
+            <td>Grocery store</td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+
+    <div class="main">
+      <h3><a href="index.html">back</a></h3>
+
+    </div>
+
+  </div>
+</body>
+
+
+</html>
