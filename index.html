@@ -26,6 +26,7 @@
         $("#nav-container").load("nav.html");
       });
     </script>
+
     <!-- Nav end -->
     <div class="header">
       <h1>tanya wang</h1>
@@ -218,10 +219,20 @@
       </p>
     </div>
 
-
-
   </div>
 
+  <script>
+    $(document).ready(function() {
+      $(".mr-auto .nav-item").bind("click", function(event) {
+        event.preventDefault();
+        var clickedItem = $(this);
+        $(".mr-auto .nav-item").each(function() {
+          $(this).removeClass("active");
+        });
+        clickedItem.addClass("active");
+      });
+    });
+  </script>
 </body>
 
 </html>
