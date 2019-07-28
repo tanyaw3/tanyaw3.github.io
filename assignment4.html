@@ -9,6 +9,7 @@
 
   <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,400" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
@@ -16,12 +17,16 @@
   <!-- Header -->
   <div id="container">
     <div class="triangle"></div>
-    <div class="nav">
-      <ul>
-        <li><a href="index.html" class="active">all projects</a></li>
-        <li><a href="about.html">about</a></li>
-      </ul>
-    </div>
+    <!-- Nav Start -->
+    <div id="nav-container"></div>
+
+    <script>
+      $(function() {
+        $("#nav-container").load("nav.html");
+      });
+    </script>
+    <!-- Nav end -->
+
     <div class="header">
       <h1>rolling desert</h1>
       <h2>maybe more of an earthquake of cams</h2>
@@ -29,8 +34,7 @@
   </div>
 
 
-
-
+  <!-- Main -->
 
   <div class="assignmentspage">
     <div class="assignment">
