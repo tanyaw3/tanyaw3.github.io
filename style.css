@@ -38,6 +38,7 @@ p {
 
   .noimage {
     padding-left: 0px;
+    padding-bottom: 10px;
   }
 }
 
@@ -130,7 +131,9 @@ a:hover {
 }
 
 .nav {
+  position: relative;
   padding-right: 0px;
+  border: 1px solid black;
 }
 
 .nav a {
@@ -150,6 +153,11 @@ a:hover {
   float: right;
 }
 
+.nav image {
+  position: absolute;
+  float: left;
+}
+
 .nav li a {
   display: block;
   text-align: center;
@@ -157,14 +165,16 @@ a:hover {
   text-decoration: none;
 }
 
-.assignheader {
+.secondarynav {}
+
+.assignheader, .approachheader {
   position: relative;
   width: 100%;
   text-align: center;
   padding-top: 50px;
 }
 
-.assignheader h3 {
+.assignheader, .approachheader h3 {
   margin-top: 80px;
   margin-bottom: 10px;
 }

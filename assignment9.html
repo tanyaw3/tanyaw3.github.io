@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+  <title>Tanya Wang</title>
+
+  <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div id="container">
+    <div class="triangle"></div>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </div>
+    <div class="header">
+      <h1>geometric weather clock</h1>
+      <h2>wake up with the bees</h2>
+    </div>
+  </div>
+
+
+  <div class="assignmentspage">
+    <div class="assignment">
+      <div class="main">
+        <img src="images/a9/final_clock.jpg" />
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>concept</h2>
+      <div class="assignment">
+        <p>
+          A smart device that will show the temperature and time at a glance, so you
+          spend more time unplugged in the morning.</p>
+
+        <p>It’s so easy to start your day attached to your phone. The goal of the honeycomb weather clock is to create a functional yet beautiful time piece that will help you get ready in the morning at a glance. This is great for anyone who wants
+          to
+          spend less time on their phone. It pulls in the current weather, temperature, and time for your current location. You can also select other cities you’re interested in (like a future travel spot or a city where a loved one lives) and see
+          what
+          the weather is like there.</p>
+        <div class="inspo"><img src="images/a9/sketch.png" width=500></a></div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>technical implementation</h2>
+
+      <div class="assignment">
+        <h3>01</h3>
+        <h3>Breaking down the idea</h3>
+        <div class="inspo"><img src="images/a9/system.png" width=500></a></div>
+        <p>
+          Interactions<br /><br />
+          Input
+          <ul>
+            <li> Use the WiFi module (ESP8266 Huzzah) to pull in the time and temperature from the internet</li>
+            <li> Use button to change the city that's pulled up on the screen</li>
+          </ul>
+          Output
+          <ul>
+            <li> The LED lights behind the bees will change color depending on the temperature
+              outside, following the color system of blue for cooler temperatures, green for
+              moderate temperatures, and red for hot temperatures.</li>
+            <li> The time will be shown through the LED matrix</li>
+            <li> The LED light next to the button will light to give feedback that the button has been pressed.</li>
+            <li> The city and weather will be shown through the LCD screen</li>
+          </ul>
+
+        </p>
+        <p>Challenges</p>
+        <p>There’s a lot of risks that I’m already perceiving from this project that aren’t even
+          related to the coding and hardware portions. I have some experience with laser cutting
+          and 3d printing and already expect to do some heavy troubleshooting. If those pieces
+          become too much of a problem, I may have to resort to more functional elements.
+          For the Arduino portion of my project, this will be my first attempt to attach Wi-Fi to it
+          and I feel like I may run into some networking issues. If I’m not able to add the WiFi,
+          then I may look at a non-RTC clock option to fake a part of the system.
+          I may also change the scope, so it’s simplified and more focused on the LED.</p>
+
+      </div>
+
+      <div class="assignment">
+        <h3>02</h3>
+        <h3>software components</h3>
+        <p>
+          Through this project, I solidified my understanding of code enough to bring my idea to life. I learned how to:
+          <ul>
+            <li>Use libraries</li>
+            <li>Connect to Wifi and call for data by grabbing a string and parsing with JSON</li>
+            <li>Serial to Serial Communication- send the data to a receiver (or in this case, the Arduino)</li>
+          </ul>
+        </p>
+        <p>Full code with notes can be <a href="files/a9/arduino.zip">downloaded here.</a></p>
+        <p>References
+          <ul>
+            <li><a href="https://robotic-controls.com/learn/arduino/arduino-arduino-serial-communication">Arduino Serial Communication</a></li>
+            <li><a href="https://randomnerdtutorials.com/esp8266-weather-forecaster/">ESP8266 Forecaster</a></li>
+            <li><a href="https://www.hackster.io/andrew-jones/making-a-wooden-led-clock-84b9ea">Making a wooden LED clock</a></li>
+            <li><a href="https://github.com/JChristensen/Timezone">Timezone by JChristensen</a></li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="assignment">
+        <h3>03</h3>
+        <h3>hardware components</h3>
+        <p>Implementation:</p>
+        <img src="images/a9/circuit.png" width=200 />
+        <p>
+          This prototype starts by connecting to WiFi and leveraging the Arduino Time Library and Timezone Library on the WiFi microcontroller (Huzzah 8266) to pull the Universal Coordinated Time and convert it to the local time. Once it converts
+          it
+          to a local time, each number is mapped to a set of bitmaps that activate a pattern of lights on an LED matrix. If the previous minute does not equal the current minute, it will move the minute and/or hour forward on the display
+          accordingly.
+        </p>
+
+        <p>When you press the button, it will turn an LED light on to let you know that you have pressed the button. Next, the Huzzah 8266 will send a request to the Open Weather API for a specific city and pulls the string weather data from the
+          page.
+          Then, it reads through the lines of the reply from the server and extracts the JSON string from it. Next, you parse the Json string to grab the current city, weather, and temperature. Since the temperature is in Kelvin, it is converted
+          into
+          Celsius and then into Fahrenheit. Both the current weather and temperature are printed to the serial monitor with clear start and end markers that will later be used by the Arduino. Then, the LED light turns off and the code moves it to
+          the
+          next city.</p>
+
+        <p>
+          The Huzzah 8266 is connected through the serial ports to the Arduino. Through serial to serial communication, the Arduino receives the serial print string and uses the start and end marker to pull in the data that has been defined as
+          important. Then, it parses the weather and temperature and saves them as two separate variables, so it can be used as two separate output signals.
+        </p>
+
+        <p>
+          The city and weather are printed to the LCD screen. The temperature data is sent through an if statement that determines what color the RGB LEDs should be. If it’s < 50 degrees Fahrenheit the light is blue. If it’s between 50-70 degrees
+            Fahrenheit the light is green, and if it’s>50 degrees Fahrenheit the light is red. The color of the lights is set through the RGB color code.
+        </p>
+        <img src="images/a9/interior1.png" width=200 />
+
+
+      </div>
+
+    </div>
+
+    <div class="container">
+      <h2>kit design and execution</h2>
+
+      <div class="assignment">
+        <h3>01</h3>
+        <h3>3D print bee and stand</h3>
+        <p>I downloaded both the bee and the stand file from Thingiverse.
+        </p>
+        <div class="inspo"><img src="images/a9/bee.png" width=500></div>
+        <p><b>Print</b><br /><br />
+          When printing, make sure to stay with the print until the first layer has successfully printed.
+        </p>
+
+        <p><b>3D Print Settings and Details:</b>
+          <ul>
+            <li>Infill: 40% (since I wanted it to be sturdier and have more heft)</li>
+            <li>No supports needed for the stand since there was always a stable layer underneath each top layer. For the bee, I used PVA since it was water soluble</li>
+            <li>Material: PLA and PVA</li>
+          </ul>
+        </p>
+        <p><b>Remove excess plastic</b><br /><br />
+          Drop the bees in a cup of warm water and use something to swirl the prints around to help speed up the removal of the PVA supports. Otherwise, wait a few hours.
+        </p>
+      </div>
+
+
+
+      <div class="assignment">
+        <h3>02</h3>
+        <h3>Laser cut</h3>
+        <p><b>Before you go</b></p>
+        <p>To make sure everything fit, I first laser cut on cardboard before moving to wood. This also helped me realize that instead of doing dots, I should just cut out a rectangle around the clock to ensure the time would show through. </p>
+        <div class="inspo"><img src="images/a9/cardboard.jpg" width=400></div>
+        <p><b>Prepare the file and materials</b></p>
+        <ul>
+          <li>Open the exported files in Adobe Illustrator including ferris wheel, stand, and booth sides from Rhino and the seat from Onshape (DXF file that can be opened in Illustrator)</li>
+          <li>Make sure it's imported in at a 1:1 millimeter ratio</li>
+          <li>Change stroke width to .001 pt. It will look barely visible on screen.</li>
+          <li>Put each element on its own layer to make editing easier when you laser cut. Sometimes, certain lines won't cut as well if the wood used to laser cut isn't flat. Instead of recutting everything, this gives you the flexibility to only
+            cut that one area instead of everything.</li>
+        </ul>
+
+        <p><b>Set-up print settings and laser settings</b><br /><br /> For more details on how to do this, check out <a href="assignment1.html">geometric lampshade write-up</a></p>
+
+
+        <p>Once the fit is established, lasercut on your actual material</p>
+
+        <p><b>Laser Cut Settings:</b>
+          <ul>
+            <li>Thin Cardboard: 20% speed, 100% power, 50% frequency</li>
+            <li>Thick Cardboard: 10% speed, 100% power, 50% frequency</li>
+            <li>Wood: 6% speed, 100% power, 50% frequency</li>
+          </ul>
+        </p>
+      </div>
+
+
+      <div class="assignment">
+        <h3>03</h3>
+        <h3>Put everything together</h3>
+        <p>Remember to wipe off the excess ash from the laser cutter before starting</p>
+        <p>I ended up cutting too large of a hold in the wood for the screens, so I tried to mask it with painter's tape knowing that I would paint over it. I also wanted to leverage this as a textural design element.</p>
+        <div class="inspo"><img src="images/a9/wood.jpg" width=400></div>
+      </div>
+
+      <div class="assignment">
+        <h3>05</h3>
+        <h3>Finishing</h3>
+        <p>Paint the clock and honeycomb overlay</p>
+        <div class="inspo"><img src="images/a9/finish1.jpg" width=400></div>
+        <div class="inspo"><img src="images/a9/finish2.jpg" width=400></div>
+
+      </div>
+
+
+      <div class="assignment">
+        <h3>06</h3>
+        <h3>Video Summary</h3>
+        <iframe width="1120" height="630" src="https://www.youtube.com/embed/i0q1lZ3C-bg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="container">
+      <h2>source files</h2>
+      <div class="assignment">
+        <h3>Build Files</h3>
+        <ul>
+          <li><a href="files/a9/arduino.zip">Arduino files</a></li>
+          <li><a href="files/a9/Bee.zip">3D Bee file</li>
+          <li><a href="files/a9/Clock_Stand.zip">Clock stand (originally a guitar stand)</a></li>
+          <li><a href="files/a9/weather-clock.ai">Wood frame for clock</a></li>
+          <li><a href="files/a9/weather-clock.ai">Fritz file for circuit layout</a></li>
+        </ul>
+
+      </div>
+    </div>
+
+
+
+    <div class="main">
+      <h3><a href="index.html">back</a></h3>
+
+    </div>
+
+  </div>
+</body>
+
+
+</html>

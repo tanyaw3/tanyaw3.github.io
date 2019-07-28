@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
   <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
   <title>Tanya Wang</title>
-
   <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,400" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 </head>
 
 <body>
@@ -16,27 +17,136 @@
   <!-- Header -->
   <div id="container">
     <div class="triangle"></div>
-    <div class="nav">
-      <ul>
-        <li><a href="#" class="active">all projects</a></li>
-        <li><a href="about.html">about</a></li>
-      </ul>
-    </div>
+
+    <!-- Nav Start -->
+    <div id="nav-container"></div>
+
+    <script>
+      $(function() {
+        $("#nav-container").load("nav.html");
+      });
+    </script>
+    <!-- Nav end -->
     <div class="header">
       <h1>tanya wang</h1>
-      <h2>hcde 598 digital fabrication</h2>
+      <h2>a work in progress</h2>
+      <p></p>
     </div>
   </div>
 
-  <div class="assignheader">
-    <h3><a href="#assignments">PROJECTS</a></h3>
-    <i class="arrow down"></i>
+  <!-- Approach -->
+  <div class="approachheader">
+    <h3> APPROACH </h3>
+  </div>
 
+  <div class="about">
+    <div class="assignments">
+      <div class="assignment">
+        <div class="noimage">
+          <h4>Discover</h4>
+          <ul>
+            <li>Focus on the person and the community</li>
+            <li>Systems Designs thinking- what should we build and why?</li>
+            <li>Collaborating across teams</li>
+            <li>Building digital experiences- fb.gg/home, facebook.com/creators, and more to come</li>
+            <li>Helping people grow their careers </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="assignment">
+        <div class="noimage">
+          <h4>Discover</h4>
+          <ul>
+            <li>Focus on the person and the community</li>
+            <li>Systems Designs thinking- what should we build and why?</li>
+            <li>Collaborating across teams</li>
+            <li>Building digital experiences- fb.gg/home, facebook.com/creators, and more to come</li>
+            <li>Helping people grow their careers </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="assignment">
+        <div class="noimage">
+          <h4>Discover</h4>
+          <ul>
+            <li>Focus on the person and the community</li>
+            <li>Systems Designs thinking- what should we build and why?</li>
+            <li>Collaborating across teams</li>
+            <li>Building digital experiences- fb.gg/home, facebook.com/creators, and more to come</li>
+            <li>Helping people grow their careers </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="assignments">
+      <div class="assignment">
+        <div class="noimage">
+          <h4>Discover</h4>
+          <ul>
+            <li>Focus on the person and the community</li>
+            <li>Systems Designs thinking- what should we build and why?</li>
+            <li>Collaborating across teams</li>
+            <li>Building digital experiences- fb.gg/home, facebook.com/creators, and more to come</li>
+            <li>Helping people grow their careers </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="assignment">
+        <div class="noimage">
+          <h4>Discover</h4>
+          <ul>
+            <li>Focus on the person and the community</li>
+            <li>Systems Designs thinking- what should we build and why?</li>
+            <li>Collaborating across teams</li>
+            <li>Building digital experiences- fb.gg/home, facebook.com/creators, and more to come</li>
+            <li>Helping people grow their careers </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="assignment">
+        <div class="noimage">
+          <h4>Discover</h4>
+          <ul>
+            <li>Focus on the person and the community</li>
+            <li>Systems Designs thinking- what should we build and why?</li>
+            <li>Collaborating across teams</li>
+            <li>Building digital experiences- fb.gg/home, facebook.com/creators, and more to come</li>
+            <li>Helping people grow their careers </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Projects -->
-  <a name="assignments"></a>
+  <div class="assignheader">
+    <h3>
+      <a href="#prototypes">
+        PROTOTYPES </br>
+        &nbsp;v
+      </a>
+    </h3>
+  </div>
+
+  <!-- Projects -->
+  <a name="prototypes"></a>
+
+
   <div class="assignments">
+    <div class="assignment">
+      <a href="assignment9.html">
+        <h3>Weather Clock</h3>
+        <img src="images/a9/final_clock2.jpg" width=200 />
+      </a>
+      <p>
+        Arduino with ESP8266
+      </p>
+    </div>
+
     <div class="assignment">
       <a href="assignment1.html">
         <h3>Geometric Lamp Shade</h3>
@@ -90,11 +200,11 @@
 
     <div class="assignment">
       <a href="assignment7.html">
-        <h3>final project proposal</h3>
+        <h3>ferris wheel proposal</h3>
         <img src="images/a7/sketch2.jpg" width=250 />
       </a>
       <p>
-        Plans for my final project
+        Plans for my ferris wheel
       </p>
     </div>
 
@@ -107,6 +217,8 @@
         A culmination of techniques
       </p>
     </div>
+
+
 
   </div>
 
