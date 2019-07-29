@@ -135,6 +135,11 @@ a:hover {
   padding-right: 0px;
 }
 
+#navbar .active {
+  background-color: #36384C;
+  color: white;
+}
+
 .nav a {
   position: relative;
   float: right;

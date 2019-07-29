@@ -25,6 +25,11 @@
       $(function() {
         $("#nav-container").load("nav.html");
       });
+
+      $("#navbar a").on("click", function() {
+        $("#navbar a").removeClass("active");
+        $(this).addClass("active");
+      });
     </script>
     <!-- Nav end -->
 
@@ -100,18 +105,7 @@
     </div>
   </div>
 
-  <script>
-    $(document).ready(function() {
-      $(".mr-auto .nav-item").bind("click", function(event) {
-        event.preventDefault();
-        var clickedItem = $(this);
-        $(".mr-auto .nav-item").each(function() {
-          $(this).removeClass("active");
-        });
-        clickedItem.addClass("active");
-      });
-    });
-  </script>
+
 
 </body>
 
