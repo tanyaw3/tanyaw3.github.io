@@ -26,11 +26,14 @@
         $("#nav-container").load("nav.html");
       });
 
-      $("#navbar a").on("click", function() {
-        $("#navbar a").removeClass("active");
-        $(this).addClass("active");
+      $(function() {
+        $('#navbar a').click(function() {
+          $('#navbar a').removeClass('active');
+          $(this).addClass('active');
+        });
       });
     </script>
+
     <!-- Nav end -->
 
     <div class="header">
